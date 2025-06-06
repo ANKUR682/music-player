@@ -1,0 +1,81 @@
+.playbar {
+  display: flex;
+  gap: 65px;
+  
+  padding: 23px;
+  background-color: #a4bcbc;
+}
+.playbar img {
+  height: 20px;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.songname {
+  background-color: bisque;
+  border: 2px solid black;
+  height: 232px;
+  width: 236px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.container{
+    background-color: grey;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.music{
+    padding-bottom: 75px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+}
+.playbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.playbar1{
+  background-color: #a4bcbc;
+  border: 2px solid black;
+}
+
+.playbar1 .seek{
+  position: relative;
+    width: 190px;
+    border: 2px solid #000000;
+    margin-left: 20px;
+    margin-top: 13px;
+    border-radius: 3px;
+}
+
+.ball{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 45px;
+  background-color: #000000;
+  position: absolute;
+  margin: 13px;
+  margin-left: 19px;
+  margin-top: 9px;
+  transition: all 3s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.playbar:hover .ball{
+  transform: translateX(188px);
+}
